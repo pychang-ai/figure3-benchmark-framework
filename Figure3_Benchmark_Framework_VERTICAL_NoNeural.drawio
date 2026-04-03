@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2026-04-03T13:47:00.000Z" agent="5.0 (X11)" version="22.1.11" etag="Figure3-Vertical-NoNeural-Framework" type="device">
+  <diagram name="Figure-3-Vertical-NoNeural-Framework" id="Figure3VerticalNoNeural">
+    <mxGraphModel dx="650" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="650" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Figure 3 - Proposed Benchmark Framework" 
+                style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontColor=#2C3E50;fontStyle=1;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="20" width="500" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 1: Data Collection -->
+        <mxCell id="stage1" value="Data Collection &amp; Description&#xa;&#xa;5 Taiwanese Ports · 2001–2026 · 301 months/port&#xa;&#xa;Kaohsiung · Keelung · Taipei · Taichung · Anping" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#85C1E9;fontFamily=Arial;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="70" width="500" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 1 -->
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#2C3E50;strokeWidth=3;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" 
+                edge="1" parent="1" source="stage1" target="stage2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="160" as="sourcePoint" />
+            <mxPoint x="325" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Stage 2: Experimental Setup (移除 NeuralForecast) -->
+        <mxCell id="stage2" value="Experimental Setup&#xa;&#xa;Train/Test split (last 12 months) · h=12 · input_size=24&#xa;&#xa;max_steps=1000 · Standard scaling · RTX 4060 Ti" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#85C1E9;fontFamily=Arial;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="180" width="500" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 2 -->
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#2C3E50;strokeWidth=3;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" 
+                edge="1" parent="1" source="stage2" target="stage3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="270" as="sourcePoint" />
+            <mxPoint x="325" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Stage 3: 10 Models -->
+        <mxCell id="stage3" value="10 Deep Learning Models × 5 Architectural Families" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#F7DC6F;fontFamily=Arial;fontSize=14;fontColor=#000000;fontStyle=1;align=center;verticalAlign=top;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="290" width="500" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Sub-components for Stage 3 - First Row -->
+        <mxCell id="sub3_1" value="Basis Expansion&#xa;N-BEATS · N-HiTS" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5C4;strokeColor=#FF8C00;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="90" y="330" width="140" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sub3_2" value="Transformer&#xa;PatchTST · TFT" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5C4;strokeColor=#FF8C00;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="255" y="330" width="140" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sub3_3" value="MLP/Linear&#xa;DLinear · TiDE" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5C4;strokeColor=#FF8C00;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="420" y="330" width="140" height="35" as="geometry" />
+        </mxCell>
+        
+        <!-- Sub-components for Stage 3 - Second Row -->
+        <mxCell id="sub3_4" value="CNN&#xa;TCN · BiTCN · TimesNet" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5C4;strokeColor=#FF8C00;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="140" y="380" width="170" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sub3_5" value="RNN&#xa;LSTM" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5C4;strokeColor=#FF8C00;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="340" y="380" width="170" height="35" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 3 -->
+        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;strokeColor=#2C3E50;strokeWidth=3;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" 
+                edge="1" parent="1" source="stage3" target="stage4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="440" as="sourcePoint" />
+            <mxPoint x="325" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Stage 4: Evaluation Metrics -->
+        <mxCell id="stage4" value="Evaluation Metrics&#xa;&#xa;MAE · RMSE · MAPE · SMAPE · R²" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#82E0AA;fontFamily=Arial;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="460" width="500" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 4 -->
+        <mxCell id="arrow4" value="" style="endArrow=classic;html=1;strokeColor=#2C3E50;strokeWidth=3;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" 
+                edge="1" parent="1" source="stage4" target="stage5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="550" as="sourcePoint" />
+            <mxPoint x="325" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Stage 5: Three-Tier Framework -->
+        <mxCell id="stage5" value="Three-Tier Statistical Comparison Framework" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAEF;strokeColor=#D2B4DE;fontFamily=Arial;fontSize=14;fontColor=#000000;fontStyle=1;align=center;verticalAlign=top;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="570" width="500" height="160" as="geometry" />
+        </mxCell>
+        
+        <!-- Tier sub-components -->
+        <mxCell id="tier1" value="Tier 1: Global&#xa;Friedman Test + Nemenyi Post-hoc" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A569BD;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="95" y="610" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tier2" value="Tier 2: Pairwise&#xa;Diebold–Mariano + Harvey Correction" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A569BD;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="255" y="610" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tier3" value="Tier 3: Set-based&#xa;Model Confidence Set (MCS)" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A569BD;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="415" y="610" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Questions -->
+        <mxCell id="q1" value="Are models different?" 
+                style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=9;fontColor=#FF8C00;fontStyle=2;" 
+                vertex="1" parent="1">
+          <mxGeometry x="95" y="675" width="140" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="q2" value="Which pairs differ?" 
+                style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=9;fontColor=#FF8C00;fontStyle=2;" 
+                vertex="1" parent="1">
+          <mxGeometry x="255" y="675" width="140" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="q3" value="Best subset?" 
+                style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=9;fontColor=#FF8C00;fontStyle=2;" 
+                vertex="1" parent="1">
+          <mxGeometry x="415" y="675" width="140" height="25" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 5 -->
+        <mxCell id="arrow5" value="" style="endArrow=classic;html=1;strokeColor=#2C3E50;strokeWidth=3;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" 
+                edge="1" parent="1" source="stage5" target="stage6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="740" as="sourcePoint" />
+            <mxPoint x="325" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Stage 6: Results -->
+        <mxCell id="stage6" value="Results: Model Rankings · Port-Specific Guidelines · Best Model Set" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C3E50;strokeColor=#1B2631;fontFamily=Arial;fontSize=12;fontColor=#FFFFFF;align=center;verticalAlign=middle;" 
+                vertex="1" parent="1">
+          <mxGeometry x="75" y="760" width="500" height="80" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
